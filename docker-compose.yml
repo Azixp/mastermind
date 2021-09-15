@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  php-apache:
+    image: php:7.3-apache
+    ports:
+      - '80:80'
+    volumes:
+      - ./src:/var/www/html
+
+volumes:
+  db:
